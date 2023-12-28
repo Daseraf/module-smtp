@@ -139,9 +139,6 @@
             </settings>
         </column>
         <actionsColumn name="actions" class="Mygento\Smtp\Ui\Component\Listing\Column\Actions">
-            <settings>
-                <indexField>id</indexField>
-            </settings>
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="component" xsi:type="string">Mygento_Smtp/js/grid/columns/actions</item>
@@ -149,6 +146,9 @@
                     <item name="sortOrder" xsi:type="number">100</item>
                 </item>
             </argument>
+            <settings>
+                <indexField>id</indexField>
+            </settings>
         </actionsColumn>
     </columns>
 </listing>
