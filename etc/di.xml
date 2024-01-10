@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\Mail\TransportInterface">
-        <plugin name="mygento_smtp" type="Mygento\Smtp\Mail\Transport" />
+        <plugin name="mygento_smtp" type="Mygento\Smtp\Mail\Transport" sortOrder="10"/>
+        <!-- Fix order of the core plugin in order to log messages even email communication is disabled -->
+        <plugin name="EmailDisable" type="Magento\Email\Model\Mail\TransportInterfacePlugin" sortOrder="20"/>
     </type>
 
     <!-- generated code -->
