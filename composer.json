@@ -13,7 +13,7 @@
     "mygento"
   ],
   "require": {
-    "magento/module-email": "~101.1.6"
+    "magento/module-email": "*"
   },
   "require-dev": {
     "mygento/coding-standard": "v2.4.x-dev"
